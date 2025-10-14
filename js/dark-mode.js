@@ -4,8 +4,7 @@ const bgPicker = document.getElementById("bg-color-picker");
 
 document.body.classList.add("clase-ejemplo");
 
-toggleThemeBtn.addEventListener("click", function() {
-
+function toggleTheme(){
     document.body.classList.toggle("dark");
     if(document.body.classList.contains("dark")){
         toggleThemeBtn.textContent = "Activar Light Mode"; 
@@ -16,7 +15,12 @@ toggleThemeBtn.addEventListener("click", function() {
     }
    // alert("me diste click");
 }
-);
+
+toggleThemeBtn.addEventListener("click", function() {
+    toggleTheme();
+
+} );    
+
 
 colorPicker.addEventListener("change", function() {
     document.body.style.color = colorPicker.value;
