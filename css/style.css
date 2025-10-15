@@ -7,3 +7,39 @@ body.dark{
     background-color: var(--dark);
     color: var(--light);
 } 
+
+section#attract{
+    position: fixed;
+    background: rgb(183, 197, 220);
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+button{
+    cursor: pointer;
+    transition: all 1s;
+    background-color: var(--dark);
+    color: var(--light);
+    border: none;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    font-size: 34px;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background: var(--light);
+
+}
